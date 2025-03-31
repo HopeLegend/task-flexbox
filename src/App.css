@@ -1,6 +1,39 @@
-html,
-body,
-#root {
-    height: 100%;
-    margin: 0;
+.container {
+    width: 700px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between; /* Равномерное распределение элементов по оси X */
+    flex-direction: column; /* Расположение по вертикали */
+}
+
+.element {
+    width: 100px;
+    height: 100px;
+    background-color: #DAA520;
+    border-radius: 50%; /* Круглая форма */
+}
+
+/* Стиль для первого элемента */
+.element:nth-child(1) {
+    align-self: flex-start; /* Прижать к верхнему краю */
+}
+
+/* Стиль для второго элемента */
+.element:nth-child(2) {
+    align-self: center; /* Центр по оси Y */
+}
+
+/* Стиль для третьего элемента */
+.element:nth-child(3) {
+    align-self: flex-end; /* Прижать к нижнему краю */
+}
+
+/* Стиль для четвертого элемента */
+.element:nth-child(4) {
+    align-self: center; /* Центр по оси Y */
+}
+
+/* Стиль для пятого элемента */
+.element:nth-child(5) {
+    align-self: flex-start; /* Прижать к верхнему краю */
 }
